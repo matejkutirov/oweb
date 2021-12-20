@@ -47,3 +47,13 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+const likeBtn = document.querySelectorAll(".like__btn");
+
+likeBtn.forEach((btn) => {
+  btn.onclick = function () {
+    count = 0;
+    count += 1;
+    btn.innerHTML = `<i class="fas fa-thumbs-up"></i>` + " " + count + " Like";
+  };
+});

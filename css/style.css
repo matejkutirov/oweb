@@ -684,12 +684,16 @@ input[type="checkbox"]:checked + label {
   bottom: 5rem;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+
 .like__btn {
-  position: flex;
-  top: 10px;
-  left: 10px;
-  z-index: 2;
   padding: 10px 15px;
   background: var(--clr-accent);
   font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 5px;
+  color: #e8efff;
+  outline: none;
+  border: none;
+  cursor: pointer;
 }
